@@ -30,8 +30,11 @@ const Campaigns: React.FC<ICampaignsProps> = (props: React.PropsWithChildren<ICa
   };
 
   const UpdateData = () => {
+    //divide data into 3 tabs
     setcampaignData({ upcomingItems: allItems.filter((i) => i.createdOn > today), liveItems: allItems.filter((i) => i.createdOn < today && i.endDate > today), pastItems: allItems.filter((i) => i.endDate < today) });
   };
+
+  //TODO: Set up loader control for the application.
 
   React.useEffect(() => {
     // LoaderControl(true);
@@ -46,9 +49,7 @@ const Campaigns: React.FC<ICampaignsProps> = (props: React.PropsWithChildren<ICa
     // LoaderControl(false);
   }, [allItems]);
 
-  // const modalHeadersviewPricing: string = "";
-  // const modalHeadersreschedule: string = "Reschedule";
-  const modalViewsviewPricing = (
+  const modalViewsviewPricing = ( //modal body for pricing
     <div>
       <div style={{ width: "100%", display: "flex", marginBottom: "30px" }}>
         <img src={product} style={{ float: "left" }} width="137" height="137" className="d-inline-block align-top" alt="product logo" />
@@ -68,7 +69,7 @@ const Campaigns: React.FC<ICampaignsProps> = (props: React.PropsWithChildren<ICa
       </div>
     </div>
   );
-  const modalViewsreschedule = (
+  const modalViewsreschedule = ( //modal body for rescheduling
     <div>
       <div style={{ width: "100%", display: "flex", marginBottom: "30px" }}>
         <img src={product} style={{ float: "left" }} width="137" height="137" className="d-inline-block align-top" alt="product logo" />
@@ -102,6 +103,7 @@ const Campaigns: React.FC<ICampaignsProps> = (props: React.PropsWithChildren<ICa
       });
       try {
         //serviceAPI.saveItem()
+        //TODO: Build serviceAPI methods.
         setItems(dd);
         setModal("");
         setModalShow(false);
