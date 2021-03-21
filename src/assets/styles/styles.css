@@ -1,0 +1,349 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 80%;
+  }
+}
+
+/* navbar */
+.bg-darknav {
+  background-color: #1f2640;
+}
+
+.localization button {
+  color: white !important;
+}
+
+.navMargin {
+  height: 40px;
+}
+
+.header {
+  /* position: absolute; */
+  /* width: 430px; */
+  /* height: 50px; */
+  /* left: 182px; */
+  /* top: 120px; */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 50px;
+  /* identical to box height, or 104% */
+  color: #2b416c;
+}
+
+@media (max-width: 600px) {
+  .header {
+    /* position: absolute; */
+    /* width: 430px; */
+    /* height: 50px; */
+    /* left: 182px; */
+    /* top: 120px; */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 15px;
+    /* identical to box height, or 104% */
+    color: #2b416c;
+  }
+}
+
+.productLogo {
+  float: left;
+}
+
+.icon {
+  margin-right: 6px;
+}
+
+.btnTxt {
+  height: 16px;
+  left: 28.04%;
+  right: -0.93%;
+  top: calc(50% - 16px / 2);
+  font-family: Roboto;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  color: #7788a3 !important;
+}
+
+.tabs {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #556789 !important;
+  border-color: transparent !important;
+}
+
+@media (max-width: 600px) {
+  .tabs {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 28px;
+    color: #556789 !important;
+    border-color: transparent !important;
+    padding: 0.3rem 0.4rem;
+  }
+}
+
+.tabs.active {
+  color: #83a515 !important;
+  border-bottom: 4px solid #83a515 !important;
+}
+
+.table {
+  margin-top: 40px;
+}
+
+.table thead {
+  width: 100%;
+  background: #f1f1f4;
+  /* width: 1077px;
+  height: 48px;
+  left: 181px;
+  top: 293px; */
+}
+
+@media (max-width: 600px) {
+  .table thead {
+    width: 100%;
+    background: #f1f1f4;
+    /* width: 1077px;
+    height: 48px;
+    left: 181px;
+    top: 293px; */
+  }
+}
+
+.tabHead {
+  /* width: 39px;
+  height: 24px;
+  left: 201px;
+  top: 305px; */
+  margin-left: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  text-transform: uppercase;
+  color: #556789;
+}
+
+.rowTopRow {
+  /* height: 24px;
+  left: 21.46%;
+  right: 59.96%;
+  top: calc(50% - 24px / 2 - 23px); */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  color: #556789;
+}
+
+.rowBottomRow {
+  /* height: 16px;
+  left: 21.46%;
+  right: 76.8%;
+  top: calc(50% - 16px / 2 + 1px); */
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 0px;
+  color: #9ca2b7;
+}
+
+.modal-content {
+  border-radius: 0px !important;
+}
+
+.modal-header {
+  border-bottom: none !important;
+}
+
+.modal-footer {
+  border-top: none !important;
+  justify-content: center !important;
+}
+
+.btnn {
+  border: 2px solid #181b34 !important;
+  box-sizing: border-box;
+  border-radius: 0px !important;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold !important;
+  /* font-size: 16px; */
+  /* line-height: 19px; */
+  text-align: center !important;
+  color: #181b34;
+}
+
+.btnns {
+  border: 2px solid #007bff !important;
+  box-sizing: border-box;
+  border-radius: 0px !important;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold !important;
+  /* font-size: 16px; */
+  /* line-height: 19px; */
+  text-align: center !important;
+  /* color: #181b34; */
+}
+
+.pricing {
+  left: 5%;
+  right: 75.75%;
+  top: calc(50% - 32px / 2 - 42.5px);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  color: #2b416c;
+}
+
+.pricingI {
+  left: 5%;
+  right: 83.75%;
+  top: calc(50% - 24px / 2 + 90.5px);
+  margin-bottom: 0.6rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7788a3;
+}
+
+.pricingS {
+  left: 79%;
+  right: 5%;
+  top: calc(50% - 24px / 2 + 2.5px);
+  float: right;
+  margin-bottom: 0.6rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: #556789;
+}
+
+.pNme {
+  left: 41.75%;
+  right: 32.25%;
+  top: calc(50% - 19px / 2 - 128px);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  color: #2b416c;
+}
+
+.pRgn {
+  left: 41.75%;
+  right: 53.75%;
+  top: calc(50% - 16px / 2 - 96.5px);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #9ca2b7;
+}
+
+.btn.focus,
+.btn:focus {
+  box-shadow: 0 0 0 0rem rgb(0 123 255 / 25%) !important;
+}
+
+.text-muted {
+  color: red !important;
+}
+
+@media (min-width: 576px) {
+  .modal-sm {
+    max-width: 380px !important;
+  }
+}
+
+.description {
+  padding-left: 5px;
+  align-self: flex-end;
+}
