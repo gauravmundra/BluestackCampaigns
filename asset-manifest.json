@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/BluestackCampaigns/static/css/main.ddaa3655.chunk.css",
-    "main.js": "/BluestackCampaigns/static/js/main.8ea87f1f.chunk.js",
-    "main.js.map": "/BluestackCampaigns/static/js/main.8ea87f1f.chunk.js.map",
+    "main.js": "/BluestackCampaigns/static/js/main.593a5aa7.chunk.js",
+    "main.js.map": "/BluestackCampaigns/static/js/main.593a5aa7.chunk.js.map",
     "runtime-main.js": "/BluestackCampaigns/static/js/runtime-main.6f79b419.js",
     "runtime-main.js.map": "/BluestackCampaigns/static/js/runtime-main.6f79b419.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/BluestackCampaigns/static/css/2.4c97ca4f.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.86e66ca9.chunk.js",
     "static/css/main.ddaa3655.chunk.css",
-    "static/js/main.8ea87f1f.chunk.js"
+    "static/js/main.593a5aa7.chunk.js"
   ]
 }
