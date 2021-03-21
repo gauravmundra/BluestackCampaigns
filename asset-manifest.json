@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/BluestackCampaigns/static/css/main.ddaa3655.chunk.css",
+    "main.js": "/BluestackCampaigns/static/js/main.50422dd6.chunk.js",
+    "main.js.map": "/BluestackCampaigns/static/js/main.50422dd6.chunk.js.map",
+    "runtime-main.js": "/BluestackCampaigns/static/js/runtime-main.6f79b419.js",
+    "runtime-main.js.map": "/BluestackCampaigns/static/js/runtime-main.6f79b419.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/BluestackCampaigns/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.86e66ca9.chunk.js": "/BluestackCampaigns/static/js/2.86e66ca9.chunk.js",
+    "static/js/2.86e66ca9.chunk.js.map": "/BluestackCampaigns/static/js/2.86e66ca9.chunk.js.map",
+    "static/js/3.c26f8433.chunk.js": "/BluestackCampaigns/static/js/3.c26f8433.chunk.js",
+    "static/js/3.c26f8433.chunk.js.map": "/BluestackCampaigns/static/js/3.c26f8433.chunk.js.map",
+    "index.html": "/BluestackCampaigns/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/BluestackCampaigns/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.ddaa3655.chunk.css.map": "/BluestackCampaigns/static/css/main.ddaa3655.chunk.css.map",
+    "static/js/2.86e66ca9.chunk.js.LICENSE.txt": "/BluestackCampaigns/static/js/2.86e66ca9.chunk.js.LICENSE.txt",
+    "static/media/80.1fa28895.png": "/BluestackCampaigns/static/media/80.1fa28895.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6f79b419.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.86e66ca9.chunk.js",
+    "static/css/main.ddaa3655.chunk.css",
+    "static/js/main.50422dd6.chunk.js"
+  ]
+}
