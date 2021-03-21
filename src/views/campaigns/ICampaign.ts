@@ -1,6 +1,6 @@
 export interface ICampaignsProps {}
 
-export interface ICampaignsState {}
+// export interface ICampaignsState {}
 
 export interface CampaignData {
   upcomingItems: Campaign[];

@@ -22,6 +22,8 @@ export const CampaignTable: React.FC<ICampaignTableProps> = (props: React.PropsW
   const { language, setLanguage } = React.useContext(LanguageContext);
   strings.setLanguage(language);
 
+  //TODO: Research on localization for database.
+
   const columns = [
     {
       Header: String(strings.Date).toUpperCase(),

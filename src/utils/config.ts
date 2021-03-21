@@ -1,3 +1,5 @@
+//Utility functions
+
 export const FormatedDate = (date: Date) => date.toDateString();
 
 export const today: number = new Date().valueOf();
