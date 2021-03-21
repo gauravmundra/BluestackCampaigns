@@ -32,11 +32,11 @@ export const CampaignTable: React.FC<ICampaignTableProps> = (props: React.PropsW
           <p className="rowTopRow">{FormatedDate(new Date(i.createdOn))}</p>
           <p className="rowBottomRow">
             {today < i.createdOn
-              ? `${DifferenceInDays(today, i.createdOn)} days ahead`
+              ? `${strings.Ahead1} ${DifferenceInDays(today, i.createdOn)} ${strings.Ahead2}`
               : today > i.createdOn && today < i.endDate
-              ? `${DifferenceInDays(i.createdOn, today)} days ago`
+              ? `${strings.Ago1} ${DifferenceInDays(i.createdOn, today)} ${strings.Ago2}`
               : today > i.endDate
-              ? `Ended ${DifferenceInDays(i.endDate, today)} days ago`
+              ? `${strings.Ended1} ${DifferenceInDays(i.endDate, today)} ${strings.Ended2}`
               : ""}
           </p>
         </div>

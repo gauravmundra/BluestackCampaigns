@@ -13,4 +13,10 @@ export default {
   UpcomingCampaigns: "今後のキャンペーン",
   LiveCampaigns: "ライブキャンペーン",
   PastCampaigns: "過去のキャンペーン",
+  Ahead1: "",
+  Ahead2: "日先",
+  Ago1: "",
+  Ago2: "日前に終了しました",
+  Ended1: "",
+  Ended2: "日前に終了しました",
 };

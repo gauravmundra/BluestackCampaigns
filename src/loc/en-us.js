@@ -13,4 +13,10 @@ export default {
   UpcomingCampaigns: "Upcoming Campaigns",
   LiveCampaigns: "Live Campaigns",
   PastCampaigns: "Past Campaigns",
+  Ahead1: "",
+  Ahead2: "days ahead",
+  Ago1: "",
+  Ago2: "days ago",
+  Ended1: "Ended",
+  Ended2: "days ago",
 };
