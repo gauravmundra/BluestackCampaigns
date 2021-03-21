@@ -4,6 +4,7 @@ export {};
 
 export const logger = (error: any) => console.log(error);
 
+//dummy data
 export const data: Campaign[] = [
   {
     key: 1,
@@ -54,3 +55,5 @@ export const data: Campaign[] = [
     image_url: "www.google.com",
   },
 ];
+
+//TODO: Integrate database and create api methods
