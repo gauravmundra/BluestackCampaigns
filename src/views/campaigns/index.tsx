@@ -27,11 +27,12 @@ const Campaigns: React.FC<ICampaignsProps> = (props: React.PropsWithChildren<ICa
 
   const GetData = (datas: Campaign[]) => {
     setItems(datas);
+    setcampaignData({ upcomingItems: allItems.filter((i) => i.createdOn > today), liveItems: allItems.filter((i) => i.createdOn < today && i.endDate > today), pastItems: allItems.filter((i) => i.endDate < today) });
   };
 
-  const UpdateData = () => {
+  const UpdateData = (datas: Campaign[]) => {
     //divide data into 3 tabs
-    setcampaignData({ upcomingItems: allItems.filter((i) => i.createdOn > today), liveItems: allItems.filter((i) => i.createdOn < today && i.endDate > today), pastItems: allItems.filter((i) => i.endDate < today) });
+    setcampaignData({ upcomingItems: datas.filter((i) => i.createdOn > today), liveItems: datas.filter((i) => i.createdOn < today && i.endDate > today), pastItems: datas.filter((i) => i.endDate < today) });
   };
 
   //TODO: Set up loader control for the application.
@@ -39,15 +40,15 @@ const Campaigns: React.FC<ICampaignsProps> = (props: React.PropsWithChildren<ICa
   React.useEffect(() => {
     // LoaderControl(true);
     GetData(data);
-    UpdateData();
+    UpdateData(data);
     // LoaderControl(false);
   }, []);
 
-  React.useEffect(() => {
-    // LoaderControl(true);
-    UpdateData();
-    // LoaderControl(false);
-  }, [allItems]);
+  // React.useEffect(() => {
+  //   // LoaderControl(true);
+  //   UpdateData();
+  //   // LoaderControl(false);
+  // }, [allItems]);
 
   const modalViewsviewPricing = ( //modal body for pricing
     <div>
@@ -61,8 +62,8 @@ const Campaigns: React.FC<ICampaignsProps> = (props: React.PropsWithChildren<ICa
       <div>
         <p className="pricing">{strings.Pricing}</p>
         {!IsNullOrEmpty(currentItem.price) &&
-          currentItem.price.map((pr) => (
-            <p className="pricingI">
+          currentItem.price.map((pr, index) => (
+            <p className="pricingI" key={index}>
               {pr.Duration} <span className="pricingS">${pr.Price}</span>
             </p>
           ))}
@@ -97,6 +98,7 @@ const Campaigns: React.FC<ICampaignsProps> = (props: React.PropsWithChildren<ICa
       let dd: Campaign[] = allItems;
       dd = dd.map((i) => {
         if (i.key === currentItem.key) {
+          i.endDate = i.endDate - i.createdOn + new Date(control.value).valueOf();
           i.createdOn = new Date(control.value).valueOf();
           return i;
         } else return i;
@@ -105,6 +107,7 @@ const Campaigns: React.FC<ICampaignsProps> = (props: React.PropsWithChildren<ICa
         //serviceAPI.saveItem()
         //TODO: Build serviceAPI methods.
         setItems(dd);
+        UpdateData(dd);
         setModal("");
         setModalShow(false);
         setError("");
