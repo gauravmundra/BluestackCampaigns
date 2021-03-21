@@ -1,46 +1,54 @@
-# Getting Started with Create React App
+# adani-mrp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Summary
 
-## Available Scripts
+Manage Campaigns
 
-In the project directory, you can run:
+## Used Node Framework Version
 
-### `npm start`
+![version]v10.23.0
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Prerequisites
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- react-localization
+- react-bootstrap
 
-### `npm test`
+## Solution
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Solution  | Author(s)                                                     |
+| --------- | ------------------------------------------------------------- |
+| Campaigns | Author details (Gaurav Mundra, linkedin.com/in/gaurav-mundra) |
 
-### `npm run build`
+## Version history
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Version | Date           | Comments        |
+| ------- | -------------- | --------------- |
+| 1.0     | March 20, 2021 | Initial release |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Minimal Path to Awesome
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Clone this repository
+- Ensure that you are at the solution folder
+- in the command-line run:
+  - **npm install**
+  - **npm start**
 
-### `npm run eject`
+## Features
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Each tab should show relevant data based on the status of campaign (upcoming, live, past).
+- The very first column should show the time diff from today to that campaign's date.
+- Add functionality to reschedule a campaign by opening a calendar on clicking the Schedule again icon.
+- Once the date is changed of campaign. The campaign should move to the relevant Tab, based on the date selected.
+- Clicking on View Pricing in the row should show a modal with relevant information of the campaign. See the design in the Specs section below
+- Entire UI should be responsive.. Please use your judgement on how it should look on mobile devices
+- UI should be same regarding color schemes and layout, button states etc. The assets are provided in the Specs section
+- Please use dummy json to populate the table. For reference you can see the Need Help? section below
+- You should use a modern frontend framework like ReactJS, AngularJS, VueJS etc to implement this.
+- It should support basic localization of strings in 2 languages. There should be a button to select between different languages.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## References
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [react-localization](https://www.npmjs.com/package/react-localization)
+- [React Bootstrap](https://react-bootstrap.github.io/)
