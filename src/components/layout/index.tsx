@@ -21,7 +21,7 @@ const Layout: React.FunctionComponent<ILayoutProps> = (props: React.PropsWithChi
           <Form inline>
             <DropdownButton id="dropdown-basic-button" variant="" menuAlign="right" className="localization" title="Locale">
               {Languages.map((l) => (
-                <Dropdown.Item key={l.key} active={language == l.key} onSelect={(eventKey: any, event: Object) => setLanguage(l.key)}>
+                <Dropdown.Item key={l.key} active={language === l.key} onSelect={(eventKey: any, event: Object) => setLanguage(l.key)}>
                   {l.text}
                 </Dropdown.Item>
               ))}

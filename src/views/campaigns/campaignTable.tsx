@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ICampaignsProps, Campaign, CampaignData } from "./ICampaign";
+import { Campaign } from "./ICampaign";
 import Button from "react-bootstrap/Button";
 import { FormatedDate, today, DifferenceInDays } from "../../utils/config";
 import logo from "../../assets/images/80.png";

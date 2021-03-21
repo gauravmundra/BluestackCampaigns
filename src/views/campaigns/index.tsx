@@ -8,7 +8,6 @@ import Tab from "react-bootstrap/Tab";
 import Form from "react-bootstrap/Form";
 import { data } from "../../service/serviceAPI";
 import { FormatedDate, today, IsNullOrEmpty } from "../../utils/config";
-import logo from "../../assets/images/logo.png";
 import product from "../../assets/images/80.png";
 import LanguageContext from "../../context";
 import LocalizedStrings from "react-localization";
@@ -18,7 +17,7 @@ let strings = new LocalizedStrings(localizations);
 const Campaigns: React.FC<ICampaignsProps> = (props: React.PropsWithChildren<ICampaignsProps>) => {
   const [allItems, setItems] = React.useState<Campaign[]>([]);
   const [campaignData, setcampaignData] = React.useState<CampaignData>({ upcomingItems: [], liveItems: [], pastItems: [] });
-  const [loader, LoaderControl] = React.useState<boolean>(false);
+  // const [loader, LoaderControl] = React.useState<boolean>(false);
   const [modalShow, setModalShow] = React.useState<boolean>(false);
   const [modal, setModal] = React.useState<string>("");
   const [currentItem, setCurrentItem] = React.useState<Campaign>({} as Campaign);
@@ -35,16 +34,16 @@ const Campaigns: React.FC<ICampaignsProps> = (props: React.PropsWithChildren<ICa
   };
 
   React.useEffect(() => {
-    LoaderControl(true);
+    // LoaderControl(true);
     GetData(data);
     UpdateData();
-    LoaderControl(false);
+    // LoaderControl(false);
   }, []);
 
   React.useEffect(() => {
-    LoaderControl(true);
+    // LoaderControl(true);
     UpdateData();
-    LoaderControl(false);
+    // LoaderControl(false);
   }, [allItems]);
 
   // const modalHeadersviewPricing: string = "";
@@ -96,7 +95,7 @@ const Campaigns: React.FC<ICampaignsProps> = (props: React.PropsWithChildren<ICa
     else {
       let dd: Campaign[] = allItems;
       dd = dd.map((i) => {
-        if (i.key == currentItem.key) {
+        if (i.key === currentItem.key) {
           i.createdOn = new Date(control.value).valueOf();
           return i;
         } else return i;

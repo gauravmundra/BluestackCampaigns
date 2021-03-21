@@ -54,7 +54,7 @@ code {
   .container-md,
   .container-sm,
   .container-xl {
-    max-width: 80%;
+    max-width: 80% !important;
   }
 }
 
